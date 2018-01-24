@@ -58,7 +58,7 @@
 end
 
 def winner(board)
-  if won?(board) == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+  if x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
     return "X"
   elsif won?(board) == ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
     return "O"
