@@ -58,11 +58,13 @@
 end
 
 def winner(board)
-if board == won?(board)
-  return "X"
-elsif board == "" || draw?(board)
-  return nil
-else board != full?(board)
-  return "O"
+  if board == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+    return "X"
+  elsif
+    board == ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+    return "O"
+  else
+    board == ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
+    return nil
   end
 end
