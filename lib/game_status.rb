@@ -62,8 +62,7 @@ def winner(board)
     return "X"
   elsif won?(board) = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
     return "O"
-  else
-    draw?(board) == true
+  else draw?(board) == true
     return nil
   end
 end
