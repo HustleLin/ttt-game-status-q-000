@@ -60,7 +60,7 @@ end
 def winner(board)
 if board == draw?(board)
   return nil
-else won?(board) == "X"
+else won?(board) == "O"
   return "X" || "O"
   end
 end
