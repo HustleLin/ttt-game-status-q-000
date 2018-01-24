@@ -58,7 +58,7 @@
 end
 
 def winner(board)
-  if board == ["X", " ", " ", " ", "X", " ", " ", "O", "X"]
+  if board == ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
     return "X"
   elsif
     board == ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
