@@ -58,9 +58,9 @@
 end
 
 def winner(board)
-  if x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+  if won?(board) = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
     return "X"
-  elsif o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+  elsif won?(board) = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
     return "O"
   else
     draw?(board)
