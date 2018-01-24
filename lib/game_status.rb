@@ -62,5 +62,5 @@ if board?(win) == true
   return "X" || "O"
 else board?(draw) == true
   return nil
-end
+  end
 end
