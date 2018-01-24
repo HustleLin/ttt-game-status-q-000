@@ -62,7 +62,7 @@ if board == won?(board)
   return "X"
 elsif board == "" || draw?(board)
   return nil
-else board == !full?board
+else board != full?board
   return "O"
   end
 end
