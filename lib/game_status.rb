@@ -58,9 +58,11 @@
 end
 
 def winner(board)
-if board == draw?(board)
+if board == won?(board)
+  return "X"
+elsif board == "" || draw?(board)
   return nil
-else won?(board) == "O"
-  return "X" || "O"
+else board == !full?board
+  return "O"
   end
 end
