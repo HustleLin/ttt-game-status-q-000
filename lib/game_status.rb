@@ -59,9 +59,9 @@ end
 
 def winner(board)
   board.each do |win|
-    if board[win[0]] == "X"  && board[win[1]] == "X" && board[win[2]] == "X"
+    if board[win[0]] == X  && board[win[1]] == X && board[win[2]] == X
       return X
-    elsif board[win[0]] == "O"  && board[win[1]] == "O" && board[win[2]] == "O"
+    elsif board[win[0]] == O  && board[win[1]] == O && board[win[2]] == O
       return O
     else draw?(board) == true
       return nil
