@@ -59,7 +59,8 @@ end
 
 def winner(board)
 if won?(board) == true
-  return "X" || "O"
+  return "X"
+elsif won?(board) == true
 else draw?(board) == true
   return nil
   end
